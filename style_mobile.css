@@ -1,0 +1,160 @@
+html {
+  font-size: 16px;
+}
+
+nav {
+  height: auto;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.navContainer {
+  padding: 1rem;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+.navLogo {
+  align-self: flex-start;
+  left: 1rem;
+}
+
+.navBtn {
+  display: block;
+  position: absolute;
+  top: 0.4rem;
+  right: 1rem;
+  font-size: 1.7rem;
+}
+
+.navMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.navMenu li {
+  padding: 0.8rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.navMenu li:hover {
+  background-color: #7c5f00;
+}
+
+.navMenu a:hover {
+  color: white;
+}
+
+.navMenu span {
+  display: none;
+}
+
+.navIcons {
+  display: none;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.navIcons img {
+  margin: 0 1rem;
+}
+
+.navMenu.active,
+.navIcons.active {
+  display: block;
+}
+
+nav.active {
+  background-color: #56534c;
+}
+
+.mainText h1 {
+  word-break: keep-all;
+  margin-bottom: 6rem;
+}
+
+.mainText img {
+  display: none;
+}
+
+.mainText p {
+  display: none;
+}
+
+.mainText button {
+  transform: scale(1.1);
+}
+
+.mainText button:hover {
+  background-color: #9b7e00;
+  border-color: white;
+}
+
+.mainBorder {
+  transform: scale(0.8);
+  bottom: -4.5rem;
+}
+
+.secImg {
+  width: 45rem;
+}
+
+.secText {
+  padding-top: 6rem;
+}
+
+.secText h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.secText p {
+  display: none;
+}
+
+.card {
+  min-width: 18rem;
+  min-height: 22rem;
+  margin: 2rem;
+  font-size: 1.3rem;
+}
+
+.card-img-top {
+  height: 11rem;
+}
+
+.card h5 {
+  font-size: 1.5rem;
+}
+
+footer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+
+.footerMenu {
+  display: none;
+}
+
+.footerLogo {
+  margin: 1.5rem 2rem;
+}
+
+.mobileFooterMenu {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #c2beba;
+  padding: 1.5rem 0 0 0;
+  margin: 0;
+  width: 100%;
+}
+
+.mobileFooterMenu a:hover {
+  color: #a57e00;
+}

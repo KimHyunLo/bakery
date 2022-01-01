@@ -1,253 +1,248 @@
-:root {
-  --text-color: #f0f4f5;
+html {
+  font-size: 20px;
 }
 
-@import url(//db.onlinewebfonts.com/c/3dd6e9888191722420f62dd54664bc94?family=Myriad+Pro);
-@font-face {
-  font-family: "Scriptina";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Scriptina"), url("scriptina.woff") format("woff");
-}
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot");
-  src: url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.svg#Myriad Pro")
-      format("svg");
+body {
+  font-size: 1rem;
+  margin: 0px;
+  font-family: "Alegreya", sans-serif;
 }
 
 nav {
-  background-color: rgba(86, 83, 76, 0.5);
-  color: var(--text-color);
-  width: 100%;
+  background-color: #56534c85;
+  color: white;
   display: flex;
-  align-items: center;
+  justify-content: center;
   position: fixed;
-  z-index: 2;
+  height: 3.5rem;
+  width: 100%;
+  z-index: 100;
 }
 
-.container {
+.navContainer {
+  width: 63rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.head-logo {
-  font-family: "Scriptina", serif;
-  font-size: 30em;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--text-color);
+  color: white;
 }
 
 a:hover {
-  color: var(--text-color);
+  color: white;
 }
 
-.nav-menu {
-  font-family: Alegreya, serif;
-  font-size: 0.8em;
-  letter-spacing: 0.3em;
+.navLogo {
+  font-size: 1.5rem;
+  font-family: "Scriptina";
+  letter-spacing: 0.4rem;
+  position: relative;
+  bottom: 0.4rem;
 }
 
-.nav-menu a:hover {
-  color: #ffb700;
-}
-
-.nav-burger-btn {
+.navBtn {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .head-line {
-    align-self: flex-start;
-  }
-
-  .nav-burger-btn {
-    display: block;
-    position: absolute;
-    right: 32px;
-    font-size: 24px;
-  }
-
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-wave {
-    display: none;
-  }
-
-  .nav-menu div {
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-  }
-
-  .nav-icon {
-    display: none;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .nav-menu.active,
-  .nav-icon.active {
-    display: block;
-  }
-}
-
-.main {
-  position: relative;
-  z-index: 1;
-  height: 900px;
-}
-
-.main-text {
-  position: relative;
-  bottom: 50rem;
-}
-
-.main-first-line {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  color: var(--text-color);
-  font-size: 92pt;
-}
-
-.main-second-line {
-  font-family: "Myriad Pro", serif;
-  color: var(--text-color);
-  font-size: 24pt;
-  letter-spacing: 3px;
-}
-
-.btn-style {
-  font-family: "Alegreya", serif;
-  font-weight: 700;
-  font-size: 14px;
-  color: var(--text-color);
-  letter-spacing: 4px;
-  height: 50px;
-  width: 200px;
-  background-color: rgba(86, 83, 76, 0.5);
-  border-color: rgba(158, 156, 147, 0.5);
-  border-style: dashed;
-}
-
-.btn-style:hover {
-  transform: scale(1.1);
-  background-color: rgba(86, 83, 76, 0.5);
-}
-
-footer {
-  background-image: url(/image/footer-background.png);
-  background-position: 50% 0%;
-  width: 100%;
-  height: 800px;
-  position: relative;
-  top: 170px;
+.navMenu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
 }
 
-.footer-text {
+.navMenu a {
+  margin: 0 2rem;
+  letter-spacing: 0.25rem;
+}
+
+.navMenu a:hover {
+  color: #ffe600;
+}
+
+.navIcons a {
+  margin: 0.3625rem;
+}
+
+main {
+  position: relative;
+}
+
+.carousel {
+  z-index: 0;
+}
+
+.mainText {
+  z-index: 1;
   position: absolute;
-  top: 80px;
-  font-family: "Alegreya", serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.mainText h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.6rem;
+  letter-spacing: 0.55rem;
+  margin-bottom: 2.5rem;
+}
+
+.mainText img {
+  margin-bottom: 3.45rem;
+}
+
+.mainText p {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 3.25rem;
+}
+
+.mainText button {
   font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  color: white;
+  background-color: #7c5f008a;
+  width: 10rem;
+  height: 2.5rem;
+  border-style: dashed;
+  border-color: #9e9c936e;
 }
 
-.footer-line-1 {
-  font-size: 48px;
+.mainText button:hover {
+  background-color: #9b7e00;
+  border-color: white;
+}
+
+.mainBorder {
+  position: absolute;
+  bottom: -2.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section {
+  background-color: #f3f1e9;
+}
+
+.secImg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 35.5rem;
+}
+
+.secText {
+  font-weight: 700;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.secText h2 {
   color: #56534c;
+  font-size: 2.4rem;
+  margin: 0;
 }
 
-.footer-line-2 {
-  font-size: 16px;
+.secText p {
   color: #a47d5e;
-  text-transform: capitalize;
-  letter-spacing: 1px;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+
+.cardLine {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0 4rem 0;
+}
+
+.row {
+  --bs-gutter-x: 0;
 }
 
 .card {
-  height: 380px;
-  margin: 50px;
+  margin: 2rem;
+  min-width: 14rem;
+  min-height: 21.85rem;
 }
 
-.card-line {
-  justify-content: space-around;
-  position: relative;
-  top: 30px;
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card-img-top {
-  height: 160px;
+  height: 8.5rem;
+}
+
+.card-body h5 {
+  font-weight: 700;
 }
 
 .btn-primary {
-  background-color: #56534c;
-  border-color: #56534c;
+  background-color: #7c5f00;
+  border: none;
 }
 
 .btn-primary:hover {
-  background-color: #ffb700;
-  border-color: #ffb700;
+  background-color: #ffc400;
+  border: none;
+  color: black;
+}
+
+footer {
+  background-color: #f3f1e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.5rem;
+}
+
+.footerLogo {
+  font-family: "Scriptina";
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  margin: 2.25rem;
+}
+
+footer a {
   color: #56534c;
 }
 
-.footer-menu {
-  display: flex;
-  position: absolute;
-  bottom: 0px;
-  justify-content: center;
-  width: 1400px;
+footer a:hover {
+  color: #56534c;
 }
 
-.footer-item {
+.footerMenu {
+  display: flex;
+  font-family: "Alegreya";
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding: 1.2rem 0;
   border-top: 1px solid #c2beba;
   border-bottom: 1px solid #c2beba;
-  align-self: center;
-  justify-content: center;
-  width: 500px;
-  display: flex;
 }
 
-.footer-menu a {
-  color: #56534c;
-  font-family: "Alegreya", serif;
-  letter-spacing: 3px;
-  font-size: 14px;
+.footerMenu a:hover {
+  color: #a57e00;
 }
 
-.footer-menu a:hover {
-  color: #ffb700;
+footer li {
+  margin: 0 2rem;
 }
 
-.footer-logo {
-  color: #56534c;
-  font-family: "Scriptina", serif;
-  font-size: 25pt;
-  letter-spacing: 0.2em;
+.mobileFooterMenu {
+  display: none;
 }
